@@ -1,0 +1,37 @@
+
+th{
+    background-color: black;
+    color: white;
+}
+td,th {
+    border: 3px solid white;
+    padding: 8px;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #eee;
+}
+.v{
+    border: none;
+    background-color: rgb(117, 212, 241);
+}
+.d{
+    border: none;
+    background-color: rgb(238, 106, 163);
+}
+ol,ul{
+    background:#eee;
+    padding: 30px;
+    width :300px;
+    margin: auto;
+}
+li {
+    background:white;
+    margin: 5px;
+}
+ul{
+    list-style-position: inside;
+    list-style-type: circle;
+}
