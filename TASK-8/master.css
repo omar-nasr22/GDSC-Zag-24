@@ -1,0 +1,152 @@
+.task-1 div{
+    width: 300px;
+    height: 60px;
+    background-color: #eee;
+    margin: 20px auto;
+    line-height: 4;
+    text-align: center;
+}
+.task-1 div:empty{
+    background-color: red;
+}
+.task-2{
+    margin: 20px auto;
+    width: 400px;
+}
+.task-2 p{
+    width: 400px;
+    background-color: #efefef;
+    padding: 15px;
+    position: relative;
+    border-left:4px solid #e91e63;
+}
+.task-2 p::before{
+    position: absolute;
+    content: attr(data-person);
+    padding: 10px;
+    background-color: #ddd;
+    width: 60px;
+    top: 50%;
+    left: -100px;
+    margin-top: -19px;
+    text-align: center;
+}
+.task-2 p::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: solid 10px;
+    border-color: transparent #e91e63 transparent transparent ;
+    top: 50%;
+    margin-top: -10px;
+    left: -24px;
+}
+*{
+    box-sizing: border-box;
+}
+.task-3{
+    text-align: center;
+}
+.task-3 div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 50px;
+    border-radius: 50%;
+    background-color: #eee;
+    box-shadow: 5px 5px #2196f3,-5px -5px #e91e63;
+    position: relative;
+    counter-increment: number;
+}
+.task-3 div::before{
+    position: absolute;
+    content: counter(number);
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -15px;
+    top: 0;
+    margin-top: -15px;
+    line-height: 2;
+}
+.task-3 div::after{
+    position: absolute;
+    content: "Element";
+    width: 50px;
+    top: 50%;
+    margin-top: -10px;
+    margin-left: -25px;
+}
+
+.main{
+    width: 550px;
+    height: 340px;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #ddd;
+}
+.main .basic,
+.main .pro{
+    width: 250px;
+    float: left;
+    padding: 15px;
+    background-color: #eee;
+}
+.main .plan{
+    background-color: #03a9f4;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+
+}
+.main .price{
+    text-align: center;
+    width: 100%;
+    height: 220px;
+    margin: 30px auto 20px;
+    background-color: #ddd;
+    border-radius: 50%;
+    line-height: 7;
+    font-weight: bold;
+    font-size: 32px;
+}
+.or{
+    width: 50px;
+    height: 100%;
+    background-color: white;
+    float: left;
+    position: relative;
+}
+.or::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 3px;
+    background-color: #03a9f4;
+    left: 50%;
+    margin-left: 1px;
+}
+.or::after{
+    position: absolute;
+    content: "or";
+    width: 30px;
+    height: 30px;
+    background-color: #03a9f4;
+    color: white;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -15px;
+    left: 50%;
+    margin-left: -13px;
+    text-align: center;
+    line-height: 1.5;
+
+}
